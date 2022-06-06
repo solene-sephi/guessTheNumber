@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'roboto';
+    src: url(../font/RobotoSerif-Regular.ttf);
+}
+
+html,
+body {
+    font-size: 100%;
+    font-family: 'roboto', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+p,
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 768px) {}
+
+.mainContent {
+    margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
+    transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */    background-color: blanchedalmond;
+    width: 45rem;
+    margin-right: auto;
+    margin-left: auto;
+    border: 2px solid black;
+}
+h1 {
+    color: #e8512c;
+}
+
+.borderRight {
+    border-right: 2px solid black;
+}
+
+.borderBottom {
+    border-bottom: 2px solid black;
+}
+
+.borderTop{
+    border-top: 2px solid black;
+}
+
+.bgDark {
+    padding: 0.1rem 0.5rem;
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.bgBorder {
+    padding: 0.1rem 0.5rem;
+    border: 1px solid black;
+    font-size: 1.2rem;
+}
+
+.orangeButton {
+    height: 90%;
+    width: 90%;
+    background-color: #e8512c;
+    border: none;
+}
+
+.lowerOrHigher {
+    padding: 0.1rem 0.5rem;
+    border: 1px solid black;
+}
+
+.lowerOrHigherImg {
+    height: 2rem;
+}
+
+.resultDiv {
+    padding: 0.1rem 0.5rem;
+    border: 1px solid black;
+    font-size: 1.2rem;
+}
+
