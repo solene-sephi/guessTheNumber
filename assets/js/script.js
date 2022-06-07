@@ -1,27 +1,3 @@
-/*
-Steps 
-    1. Genereate a number between 1 and 100
-    2. Indicate on which turn the player is
-    3. Get the number the player chose
-    4. Display the number chosen by the player
-    5. Compare the two numbers :
-        - If the number is correct : 
-            - Diplay to the player : you win
-            - Don't allow the player to enter another number
-            - Allow the player to play again
-        - If the number is incorrect and there is no turn left :
-            - Display to the player : you lost
-            - Display the correct number
-            - Don't allow the player to enter another number
-            - Allow the player to play again
-        - If the number is incorrect and there is still turns left :
-            - Indicate to the player if the number is too high or too low
-            - Increase the number of turns by 1
-    6. Restart game :
-        - Reset everything
-*/
-
-
 /* ==============================
 Variables set up 
 ============================== */

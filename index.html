@@ -13,7 +13,7 @@
 
 <body>
 
-    <div class="container mainContent">
+    <div class="container mainContent g-2">
         <div class="row text-center borderBottom justify-content-evenly">
             <div class="col-12 col-md-7 py-2 borderRight d-flex align-items-center">
                 <h1>Number guessing game</h1>
@@ -29,23 +29,23 @@
             <div
                 class="col-12 col-md-4 py-2 borderRight flex-fill d-flex flex-column justify-content-evenly align-items-center">
                 <label class=" d-block" for="playerNumber">Enter a number</label>
-                <input class="w-100" id="playerNumber" type="text" name="playerNumber">
+                <input id="playerNumber" type="text" name="playerNumber">
                 <p id="inputValidity"></p>
             </div>
-            <div class="col-6 col-md-4 py-2 flex-fill borderRight d-flex justify-content-evenly align-items-center">
+            <div class="col-12 col-md-4 py-2 flex-fill borderRight d-flex justify-content-evenly align-items-center">
                 <button class="orangeButton" id="submitButton" type="button">Submit</button>
             </div>
-            <div class="col-6 col-md-4 py-2 flex-fill d-flex justify-content-evenly align-items-center">
+            <div class="col-12 col-md-4 py-2 flex-fill d-flex justify-content-evenly align-items-center">
                 <p>You are on turn : <span class="bgBorder" id="turns"></span> /10</p>
             </div>
         </div>
 
-        <div class="row py-2 text-center w-50 mx-auto">
+        <div class="lowerOrHigherDiv row py-2 text-center mx-auto">
             <p class="my-2">You chose : <span id="lastNumberChosen"></span></p>
             <p class="fs-5c" id="lowerOrHigher"></p>
         </div>
 
-        <div id="resultsDiv" class="row py-2 my-2 text-center w-50 mx-auto justify-content-center">
+        <div id="resultsDiv" class="row py-2 my-2 text-center mx-auto justify-content-center">
             <p id="winOrLoose" class="my-2"></p>
         </div>
     </div>

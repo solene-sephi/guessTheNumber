@@ -12,69 +12,137 @@ body {
 }
 
 p,
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
     padding: 0;
 }
 
-@media (max-width: 768px) {}
+body {
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+}
+
+/* =============================
+Main div
+============================= */
 
 .mainContent {
-    margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
-    transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */    background-color: blanchedalmond;
-    width: 45rem;
-    margin-right: auto;
-    margin-left: auto;
-    border: 2px solid black;
+    background-color: blanchedalmond;
+    margin-top: 50vh;
+    /* poussé de la moitié de hauteur de viewport */
+    transform: translateY(-50%);
+    /* tiré de la moitié de sa propre hauteur */
+    border: 2px solid #70948a;
+    border-radius: 5px;
+    width: 90%;
 }
+
+@media (min-width: 768px) {
+    .mainContent {
+        width: 45rem;
+        margin-right: auto;
+        margin-left: auto;
+        border: 2px solid #70948a;
+        border-radius: 5px;
+    }
+}
+
 h1 {
     color: #e8512c;
 }
 
-.borderRight {
-    border-right: 2px solid black;
-}
-
-.borderBottom {
-    border-bottom: 2px solid black;
-}
-
-.borderTop{
-    border-top: 2px solid black;
-}
-
 .bgDark {
     padding: 0.1rem 0.5rem;
-    background-color: black;
+    background-color: #70948a;
     color: white;
     font-size: 1.2rem;
 }
 
 .bgBorder {
     padding: 0.1rem 0.5rem;
-    border: 1px solid black;
+    border: 1px solid #70948a;
     font-size: 1.2rem;
 }
 
-.orangeButton {
-    height: 90%;
-    width: 90%;
-    background-color: #e8512c;
-    border: none;
+
+input {
+    width: 50%;
+    border: 2px solid #70948a;
 }
 
-.lowerOrHigher {
-    padding: 0.1rem 0.5rem;
-    border: 1px solid black;
+@media (min-width: 768px) {
+    input {
+        width: 100%;
+    }
 }
 
-.lowerOrHigherImg {
-    height: 2rem;
+/* =============================
+Divs
+============================= */
+@media (min-width: 768px) {
+    .lowerOrHigherDiv,
+    #resultsDiv {
+        width: 50%;
+    }
 }
 
 .resultDiv {
     padding: 0.1rem 0.5rem;
-    border: 1px solid black;
+    border: 1px solid #70948a;
     font-size: 1.2rem;
 }
 
+
+/* =============================
+Borders
+============================= */
+@media (min-width: 768px) {
+    .borderRight {
+        border-right: 2px solid #70948a;
+    }
+}
+
+.borderBottom {
+    border-bottom: 2px solid #70948a;
+}
+
+.borderTop {
+    border-top: 2px solid #70948a;
+}
+
+/* =============================
+Buttons
+============================= */
+.orangeButton {
+    width: 50%;
+    background-color: #e8512c;
+    border: none;
+    padding: 0.2rem 0.5rem;
+}
+
+.lowerOrHigherImg {
+    height: 1rem;
+}
+
+@media (min-width: 768px) {
+    .orangeButton {
+        height: 90%;
+        width: 90%;
+        background-color: #e8512c;
+        border: none;
+    }
+
+    .lowerOrHigher {
+        padding: 0.1rem 0.5rem;
+        border: 1px solid #70948a;
+    }
+
+    .lowerOrHigherImg {
+        height: 2rem;
+    }
+}
